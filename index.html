@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Лендінг магазин одягу</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-bg page-text page-font">
+    <!-- Hero -->
+    <section class="hero-section container-center">
+      <h1 class="hero-title">
+        Стильний одяг від бренду <span class="highlight-indigo">Swank</span>
+      </h1>
+      <p class="hero-subtitle">
+        Ексклюзивна колекція сезону — комфорт та якість у кожній деталі.
+      </p>
+
+      <a href="#catalog" class="hero-button">Переглянути каталог</a>
+    </section>
+
+    <!-- Catalog slider -->
+    <section id="catalog" class="catalog-section container-center">
+      <h2 class="catalog-title">Наш каталог</h2>
+      <p class="catalog-subtitle">Обирай стильні образи для кожного моменту</p>
+      <div class="catalog-slider">
+        <div class="catalog-track" id="catalog-track">
+          <!-- Товари -->
+          <div class="catalog-slide">
+            <img
+              src="https://images.pexels.com/photos/4380970/pexels-photo-4380970.jpeg"
+              alt="Сукня"
+              class="catalog-slide-img"
+            />
+            <h3 class="catalog-slide-title">Сукня “Літо”</h3>
+            <p class="catalog-slide-price">₴1200</p>
+            <a
+              href="https://t.me/ModaUA_bot"
+              target="_blank"
+              class="catalog-slide-button"
+              >Купити</a
+            >
+          </div>
+          <div class="catalog-slide">
+            <img
+              src="https://images.pexels.com/photos/3687550/pexels-photo-3687550.jpeg"
+              alt="Сорочка"
+              class="catalog-slide-img"
+            />
+            <h3 class="catalog-slide-title">Сукня “Ранок”</h3>
+            <p class="catalog-slide-price">₴3000</p>
+            <a
+              href="https://t.me/ModaUA_bot"
+              target="_blank"
+              class="catalog-slide-button"
+              >Купити</a
+            >
+          </div>
+          <div class="catalog-slide">
+            <img
+              src="https://images.pexels.com/photos/17243492/pexels-photo-17243492.jpeg"
+              alt="Жакет"
+              class="catalog-slide-img"
+            />
+            <h3 class="catalog-slide-title">Спідниця “Тропік”</h3>
+            <p class="catalog-slide-price">₴1500</p>
+            <a
+              href="https://t.me/ModaUA_bot"
+              target="_blank"
+              class="catalog-slide-button"
+              >Купити</a
+            >
+          </div>
+          <div class="catalog-slide">
+            <img
+              src="https://images.pexels.com/photos/4937365/pexels-photo-4937365.jpeg"
+              alt="Футболка"
+              class="catalog-slide-img"
+            />
+            <h3 class="catalog-slide-title">Костюм “Елегант”</h3>
+            <p class="catalog-slide-price">₴2800</p>
+            <a
+              href="https://t.me/ModaUA_bot"
+              target="_blank"
+              class="catalog-slide-button"
+              >Купити</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="catalog-controls">
+        <button id="prevBtn" class="catalog-btn">Назад</button>
+        <button id="nextBtn" class="catalog-btn">Вперед</button>
+      </div>
+    </section>
+
+    <!-- Переваги -->
+
+    <section class="advantages-section container-center">
+      <h2 class="advantages-title">Чому обирають нас</h2>
+      <div class="advantages-grid">
+        <div class="advantage-item">
+          <svg
+            class="advantage-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5 13l4 4L19 7"
+            />
+          </svg>
+          <h3 class="advantage-title">Якість матеріалів</h3>
+          <p class="advantage-text">Використовуємо 100% натуральні тканини.</p>
+        </div>
+        <div class="advantage-item">
+          <svg
+            class="advantage-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17 9V7a5 5 0 00-10 0v2"
+            />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12v6" />
+          </svg>
+          <h3 class="advantage-title">Швидка доставка</h3>
+          <p class="advantage-text">
+            Відправляємо замовлення протягом 24 годин.
+          </p>
+        </div>
+        <div class="advantage-item">
+          <svg
+            class="advantage-icon"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+          <h3 class="advantage-title">Гарантія повернення</h3>
+          <p class="advantage-text">Якщо щось не підійшло — повернемо гроші.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section class="form-section container-center">
+      <h2 class="form-title">Отримайте знижку 10%</h2>
+      <form id="orderForm" class="form-container">
+        <input
+          type="text"
+          name="name"
+          placeholder="Ваше ім'я"
+          required
+          class="form-input"
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Телефон"
+          required
+          class="form-input"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          class="form-input"
+        />
+        <button type="submit" class="form-button">Відправити заявку</button>
+      </form>
+      <p id="formMessage" class="form-message hidden">
+        Дякуємо! Ваша заявка надіслана.
+      </p>
+    </section>
+
+    <!-- Контакти -->
+    <footer class="footer-section container-center">
+      <p>
+        Instagram:
+        <a href="#" target="_blank" class="footer-link">@swank</a>
+      </p>
+      <p>
+        Телеграм:
+        <a href="#" target="_blank" class="footer-link">@Swank</a>
+      </p>
+      <p>© 2025 Swank. Всі права захищені.</p>
+    </footer>
+
+    <script src="slider.js"></script>
+    <script src="form.js"></script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const hero = document.querySelector(".hero-section");
+        hero.classList.add("animate-in");
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const items = document.querySelectorAll(".advantage-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                observer.unobserve(entry.target); // Один раз
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+          }
+        );
+
+        items.forEach((item) => {
+          observer.observe(item);
+        });
+      });
+
+      // слайдери
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const track = document.getElementById("catalog-track");
+        const slides = Array.from(track.children);
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        const slide = slides[0];
+        const style = window.getComputedStyle(slide);
+        const slideWidth = slide.offsetWidth + parseFloat(style.marginRight);
+
+        let currentIndex = 0;
+
+        function updateSlider() {
+          const distance = -currentIndex * slideWidth;
+          track.style.transform = `translateX(${distance}px)`;
+        }
+
+        function updateButtons() {
+          prevBtn.disabled = currentIndex === 0;
+          nextBtn.disabled = currentIndex === slides.length - 1;
+        }
+
+        function moveAndUpdate() {
+          updateSlider();
+          updateButtons();
+        }
+
+        prevBtn.addEventListener("click", () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            moveAndUpdate();
+          }
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            moveAndUpdate();
+          }
+        });
+
+        // Ініціалізація
+        moveAndUpdate();
+      });
+    </script>
+  </body>
+</html>
