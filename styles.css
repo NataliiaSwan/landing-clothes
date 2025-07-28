@@ -1,6 +1,6 @@
 :root {
   --primary: #6366f1;
-
+  /* --primary: #d3c044; */
   --primary-hover: #4338ca;
   --text-main: #1b2b73;
   --text-muted: #6b7280;
@@ -258,9 +258,6 @@
   text-align: center;
   margin-bottom: 40px;
   color: var(--text-main);
-  background: linear-gradient(to right, #7b61ff, #6ac3ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .advantages-grid {
@@ -300,6 +297,7 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--text-main);
+
   margin-bottom: 8px;
 }
 
@@ -393,7 +391,7 @@
 }
 
 .footer-link {
-  color: #6366f1;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
